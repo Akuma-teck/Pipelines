@@ -55,7 +55,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <h1>アァイイウエオカキクケコサシスセソ</h1>
   <canvas id="matrix"></canvas>
-  '<a href="mon-document.pdf">Télécharger le document</a>'
+  
+  <a href="mon-document.pdf" download>
+  <button style="
+    background-color: black;
+    color: #0f0;
+    border: 1px solid #0f0;
+    padding: 10px 20px;
+    font-family: monospace;
+    cursor: pointer;
+  ">
+    📥 Télécharger le cours
+  </button>
+</a>
+
   <script>
     const canvas = document.getElementById("matrix");
     const ctx = canvas.getContext("2d");

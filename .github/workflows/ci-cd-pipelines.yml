@@ -48,7 +48,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest # Exécute le déploiement sur la dernière version d'Ubuntu
-    needs: test
+    needs: test # Exécute le déploiement après les tests
     permissions:
       pages: write        # Autorisation de déployer sur les pages GitHub..
       id-token: write     # Autorisation de se connecter avec le jeton par défaut..

@@ -50,8 +50,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     permissions:
-      pages: write        # Autorisation de déployer sur les pages GitHub
-      id-token: write     # Autorisation de se connecter avec le jeton par défaut
+      pages: write        # Autorisation de déployer sur les pages GitHub.
+      id-token: write     # Autorisation de se connecter avec le jeton par défaut.
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

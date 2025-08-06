@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-      <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MDXCVNM7');</script>
-<!-- End Google Tag Manager -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MDXCVNM7');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-06P6723JMX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-06P6723JMX');
+  </script>
+
   <meta charset="UTF-8" />
-  <title> - Matrix - </title>
+  <title>- Matrix -</title>
   <style>
     html, body {
       margin: 0;
@@ -19,7 +31,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-family: monospace;
       color: #0f0;
     }
-
     h1 {
       position: absolute;
       top: 30%;
@@ -29,45 +40,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: #0f0;
       z-index: 1;
     }
-
     canvas {
       position: absolute;
       top: 0;
       left: 0;
       z-index: 0;
     }
+    .download-btn {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      background-color: black;
+      color: #0f0;
+      border: 1px solid #0f0;
+      padding: 10px 20px;
+      font-family: monospace;
+      cursor: pointer;
+      text-decoration: none;
+    }
   </style>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-06P6723JMX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-06P6723JMX');
-</script>
 <body>
-      <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDXCVNM7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MDXCVNM7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <h1>アァイイウエオカキクケコサシスセソ</h1>
   <canvas id="matrix"></canvas>
-  
-  <a href="mon-document.pdf" download>
-  <button style="
-    background-color: black;
-    color: #0f0;
-    border: 1px solid #0f0;
-    padding: 10px 20px;
-    font-family: monospace;
-    cursor: pointer;
-  ">
+
+  <a href="mon-document.pdf" download class="download-btn">
     📥 Télécharger le cours
-  </button>
-</a>
+  </a>
 
   <script>
     const canvas = document.getElementById("matrix");

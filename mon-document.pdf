@@ -1,0 +1,13 @@
+Exercice Pratique : Créer un événement de téléchargement de fichier avec GTM
+et GA4
+Cet exercice suppose que vous avez déjà installé le conteneur Google Tag Manager sur votre site
+web et que votre tag de configuration Google Analytics 4 est en place.
+Étape 1 : Créer une page de test avec un lien PDF
+1. Créez un simple fichier HTML sur votre machine :
+◦ echo '<a href="mon-document.pdf">Télécharger le
+document</a>' > download.html
+2. Créez un faux fichier PDF (un fichier vide suffit) :
+◦ touch mon-document.pdf
+3. Hébergez cette page : Vous pouvez la mettre en ligne sur un service simple ou l'ouvrir
+directement dans votre navigateur.
+4. Ouvrez cette page dans votre navigateur.

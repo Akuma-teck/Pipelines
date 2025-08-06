@@ -42,12 +42,12 @@ jobs:
           if [ -f "./index.html" ]; then
             echo "Test réussi : Le fichier index.html existe."
           else
-            echo "Test échoué : Le fichier index.html est manquant."
+            echo "Test échoué : Le fichier index.html est manquant." 
             exit 1
           fi
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Exécute le déploiement sur la dernière version d'Ubuntu
     needs: test
     permissions:
       pages: write        # Autorisation de déployer sur les pages GitHub..

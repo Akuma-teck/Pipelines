@@ -22,7 +22,6 @@
 
   <meta charset="UTF-8" />
   <title>- Matrix -</title>
-  
   <style>
     html, body {
       margin: 0;
@@ -48,6 +47,11 @@
       z-index: 0;
     }
     .download-btn {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
       background-color: black;
       color: #0f0;
       border: 1px solid #0f0;
@@ -55,20 +59,6 @@
       font-family: monospace;
       cursor: pointer;
       text-decoration: none;
-    }
-
-    .button-container {
-      position: absolute;
-      top: 40%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      z-index: 2;
-    }
-
-    .download-link {
-      display: inline-block;
     }
   </style>
 </head>
@@ -83,18 +73,14 @@
   <h1>アァイイウエオカキクケコサシスセソ</h1>
   <canvas id="matrix"></canvas>
 
-  <!-- Boutons côte à côte -->
-  <div class="button-container">
-    <a href="page_a.html" target="_blank" class="download-btn" id="cta-button-a">S'inscrire</a>
-    <a href="page_b.html" target="_blank" class="download-btn" id="cta-button-b">Commencer gratuitement</a>
-  </div>
-
-  <!-- Bouton de téléchargement isolé -->
-  <a href="mon-document.pdf" download class="download-btn download-link" style="position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); z-index: 2;">
+  <a href="mon-document.pdf" download class="download-btn">
     Télécharger le cours
   </a>
+      <p>La meilleure façon de commencer votre voyage.</p>
+    <a href="#" download class="download-btn" id="cta-button-a">S'inscrire</a>
+      <p>La meilleure façon de commencer votre voyage.</p>
+    <a href="#" download class="download-btn" id="cta-button-b">Commencer gratuitement</a>
 
-  <!-- Matrix effect JS -->
   <script>
     const canvas = document.getElementById("matrix");
     const ctx = canvas.getContext("2d");
@@ -131,4 +117,3 @@
   </script>
 </body>
 </html>
-
